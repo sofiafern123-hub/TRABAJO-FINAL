@@ -1,0 +1,34 @@
+<!-- /paginas/comentarios.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comentarios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/estilos.css">
+  <script src="../js/likes.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><h1>Comentarios con likes</h1></header>
+  <main class="container">
+    <div class="grid">
+      <section class="card">
+        <h3>Sección 1</h3>
+        <p>Comentario destacado A.</p>
+        <div class="like"><button onclick="toggleLike(this, '#c1')">❤ Like</button><span id="c1">0</span></div>
+      </section>
+      <section class="card">
+        <h3>Sección 2</h3>
+        <p>Comentario destacado B.</p>
+        <div class="like"><button onclick="toggleLike(this, '#c2')">❤ Like</button><span id="c2">0</span></div>
+      </section>
+      <section class="card">
+        <h3>Sección 3</h3>
+        <p>Comentario destacado C.</p>
+        <div class="like"><button onclick="toggleLike(this, '#c3')">❤ Like</button><span id="c3">0</span></div>
+      </section>
+    </div>
+  </main>
+  <script>initLikes(["c1","c2","c3"]);</script>
+</body>
+</html>
