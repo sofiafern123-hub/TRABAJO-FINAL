@@ -4,7 +4,7 @@ const EL = sel => document.querySelector(sel);
 /* OpenWeather */
 window.buscarClima = async function() {
   const ciudad = EL("#ciudad").value.trim();
-  const apiKey = "TU_API_KEY_OPENWEATHER"; // reemplaza por tu clave
+  const apiKey = "8fce7914c5a7c6e9c3508e1f7490f7d9"; // reemplaza por tu clave
   if (!ciudad) return alert("Ingrese una ciudad");
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(ciudad)}&appid=${apiKey}&units=metric&lang=es`;
   try {
